@@ -12,7 +12,7 @@
         <ul class="navbar-nav mr-auto">
           {% for item in site.data.header %}
           <li class="nav-item" style="background-color: {{ item.background }}">
-            <a class="nav-link" href="{{ item.href | relative_url }}">{{ item.text | escape }}</a>
+            <a class="nav-link" href="{{ site.url }}{{ item.href | relative_url }}">{{ item.text | escape }}</a>
           </li>
           {% endfor %}
         </ul>
