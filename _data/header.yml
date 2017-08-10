@@ -1,0 +1,19 @@
+- text: Inicio
+  href: /
+  background: '#ffb300'
+
+- text: Proyectos
+  href: /proyectos/
+  background: '#c61931'
+
+- text: Eventos
+  href: /eventos/
+  background: '#71456c'
+
+- text: Ayuda
+  href: /ayuda/
+  background: '#008375'
+
+- text: Miembros
+  href: /miembros/
+  background: '#fd4f57'
