@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+ul, ol {
+  margin: 0;
+}
+
 nav.navbar {
   margin: 0;
   padding: 0;
@@ -17,11 +21,15 @@ nav.navbar {
 ul.navbar-nav {
   margin: 0;
   height: 48px;
+  float: left;
+  width: 100%;
 }
 
 ul.navbar-nav li {
   padding: 0;
   margin: 0;
+  width: 150px;
+  float: left;
 }
 
 ul.navbar-nav li a {
@@ -33,6 +41,7 @@ ul.navbar-nav li a {
   line-height: 48px;
   padding: 0;
   margin: 0;
+  float: left !important;
 }
 
 .container {
@@ -72,4 +81,8 @@ ul.navbar-nav li a {
 article.post, div.home {
   background-color: #e6e2dd;
   padding: 20px 30px;
+}
+
+a.no-underline {
+  text-decoration: none;
 }

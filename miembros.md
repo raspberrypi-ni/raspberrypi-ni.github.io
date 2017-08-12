@@ -1,5 +1,5 @@
 ---
 title: Miembros
 permalink: "/miembros/"
-layout: page
+layout: members
 ---

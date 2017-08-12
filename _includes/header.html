@@ -1,22 +1,22 @@
 <header>
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">
         <img src="http://i.imgur.com/gzEuucU.png" alt="{{ site.title }}" />
       </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           {% for item in site.data.header %}
           <li class="nav-item" style="background-color: {{ item.background }}">
-            <a class="nav-link" href="{{ site.url }}{{ item.href | relative_url }}">{{ item.text | escape }}</a>
+            <a class="nav-link" href="{{ site.url }}{{ item.href | relative_url }}">{{ item.text | escape }} <span class="sr-only">(current)</span></a>
           </li>
           {% endfor %}
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
