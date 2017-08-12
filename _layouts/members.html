@@ -1,26 +1,29 @@
 ---
 layout: page
 ---
-
-{% for item in site.data.members %}
-<div class="card" style="width: 15rem;">
-  <img class="card-img-top" src="{{ item.avatar }}" alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-title">{{ item.name }}</h4>
-    {% if item.email %}
-    <p class="card-text">
-      <small class="text-muted">{{ item.email }}</small>
-    </p>
-    {% endif %}
+<div class="card-group">
+  {% for item in site.data.members %}
+  <div class="col">
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="{{ item.avatar }}" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">{{ item.name }}</h4>
+        {% if item.email %}
+        <p class="card-text">
+          <small class="text-muted">{{ item.email }}</small>
+        </p>
+        {% endif %}
+      </div>
+      <ul class="list-group list-group-flush">
+        {% if item.github %}
+        <li class="list-group-item">
+          <a class="no-underline" href="https://github.com/{{ item.github }}" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i> {{ item.github }}
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
   </div>
-  <ul class="list-group list-group-flush">
-    {% if item.github %}
-    <li class="list-group-item">
-      <a class="no-underline" href="https://github.com/{{ item.github }}" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i> {{ item.github }}
-      </a>
-    </li>
-    {% endif %}
-  </ul>
+  {% endfor %}
 </div>
-{% endfor %}
