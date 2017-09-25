@@ -25,8 +25,7 @@ ul.navbar-nav {
 }
 
 ul.navbar-nav li {
-  padding: 0;
-  width: 150px;
+  padding: 0;  
   margin: 0;
   float: left;
 }
@@ -93,5 +92,11 @@ a.no-underline {
 @media (max-width: 768px) { 
   ul.navbar-nav li {
     width: auto;
+  }  
+}
+
+@media (min-width: 992px) { 
+  ul.navbar-nav li {
+    width: 150px;
   }  
 }
