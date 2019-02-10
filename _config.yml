@@ -17,7 +17,7 @@ title: Raspberry Pi Nicaragua
 email: info@raspberry.org.ni
 description: Comunidad Raspberry Pi de Nicaragua.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://raspberryni.github.io/website" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://raspberrypi-ni.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 lang: es
