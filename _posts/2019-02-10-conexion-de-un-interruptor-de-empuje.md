@@ -1,5 +1,7 @@
 ---
 title: Conexión de un interruptor de empuje
+categories:
+- blog
 ---
 
 https://www.youtube.com/watch?v=3TDJ4FmtGgk
