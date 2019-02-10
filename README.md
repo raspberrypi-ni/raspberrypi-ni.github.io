@@ -1,4 +1,4 @@
-# www.raspberrypi.org.ni
+# https://raspberrypi-ni.github.io
 
 Sitio web de la comunidad Raspberry Pi de Nicaragua.
 
